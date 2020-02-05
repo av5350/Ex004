@@ -25,12 +25,11 @@ public class MainActivity extends AppCompatActivity {
     public void change(View view) {
         clickNum++;
 
-        if(clickNum != 7) {
+        if(clickNum % 7 != 0) {
             btn.setText("This is a click number:" + clickNum);
         }
         else {
             btn.setText("BOOM!");
-            clickNum = 0;
         }
     }
 }
